@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:todolist # h2 database 連接位址
+    driver-class-name: org.h2.Driver # 配置driver
+    username: root # database 用戶名
+    password: 11111111 # database 密碼
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
